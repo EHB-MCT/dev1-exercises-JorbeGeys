@@ -9,8 +9,9 @@ drawName();
 
 function drawName (){
     context.lineWidth = 5;
+
+    //draw letter J
     context.strokeStyle = "red";
-    
     context.beginPath();
 
     context.moveTo(300,300);
@@ -21,7 +22,7 @@ function drawName (){
     context.stroke();
 
 
-
+    //draw letter O
     context.strokeStyle = "yellow";
     context.beginPath();
 
@@ -34,7 +35,7 @@ function drawName (){
     context.stroke();
 
 
-
+    //draw letter R
     context.strokeStyle = "blue";
     context.beginPath();
 
@@ -48,7 +49,7 @@ function drawName (){
     context.stroke();
 
 
-
+    //draw letter B
     context.strokeStyle = "green";
     context.beginPath();
 
@@ -63,7 +64,7 @@ function drawName (){
     context.stroke();
 
 
-
+    //draw letter E
     context.strokeStyle = "purple";
     context.beginPath();
 
