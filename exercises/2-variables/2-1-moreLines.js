@@ -11,7 +11,7 @@ let width = context.canvas.width;
 let height = context.canvas.height;
 console.log("height", height);
 
-let marginW = 50;
+let marginW = 200;
 let marginH = 200;
 console.log("height_without_margins" , height-2*marginH);
 
