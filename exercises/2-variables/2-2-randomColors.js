@@ -27,11 +27,11 @@ function drawrect (number){
     let red =  Math.round( Math.random() * 255);
     let green =  Math.round( Math.random() * 255);
     let blue =  Math.round( Math.random() * 255);
-    console.log(red,green,blue);
+    console.log("rgb code rechthoek nummer" , number , red,green,blue);
     let color = "rgb("+ red + "," + green + "," + blue + ")";
 
 
 
     context.fillStyle = color;
-    context.fillRect(50 + (number-1)* 20 , 50 + (number-1)* 20 , size - (number-1)* 40, size - (number-1)* 40);
+    context.fillRect(50 + (number-1)* 20   ,   50 + (number-1)* 20   ,   size - (number-1)* 40   ,   size - (number-1)* 40);
 }
