@@ -19,7 +19,7 @@ function drawConcentricCircles() {
         //Add it to the utils script:
         //The function draws the stroke of a circle 
         //and has the following parameters: x,y,radius
-        Utils.strokeCircle(200,200 , 15 + 15 * i);
+        Utils.strokeCircle(200 , 200 , 15 + 15 * i);
         console.log(i);
         i++ ;
     }
