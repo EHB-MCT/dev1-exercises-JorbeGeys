@@ -13,9 +13,11 @@ function draw() {
 }
 
 function drawDiagonalLines() {
-    let i = ;
-    while (i <= ) {
-        Utils.drawLine(, , , );
-        i = ;
+    let i =0 ;
+    while (i <7 ) {
+        Utils.drawLine(50 + 25*i , 200 + 25*i , 200 + 25*i , 50 + 25*i );
+        i++;
+        console.log("eind x coordinaat" ,200 + 25*i)
+        console.log("eind y coordinaat" ,50 + 25*i )
     }
 }

@@ -10,7 +10,7 @@ import context from "../../scripts/context.js";
  * @param {number} y2 y coordinate of the end point
  */
 
-export function drawLines (x1 , y1 , x2 , y2){
+export function drawLine (x1 , y1 , x2 , y2){
     context.beginPath();
     context.moveTo(x1 , y1);
     context.lineTo(x2 , y2);

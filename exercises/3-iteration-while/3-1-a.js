@@ -15,7 +15,7 @@ function draw() {
 function drawLines() {
     let i = 1;
     while (i <= 11) {
-        Utils.drawLines(75, 25*i + 50 ,325 ,25*i + 50 );
+        Utils.drawLine(75, 25*i + 50 ,325 ,25*i + 50 );
         i++ ;
         console.log(i);
     }

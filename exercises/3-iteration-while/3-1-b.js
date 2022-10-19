@@ -14,11 +14,11 @@ function draw() {
 
 function drawGrid() {
     let i = 0;
-    while (i < 7) {
+    while (i <= 6) {
         let x = 75 + 50*i;
         let y = x;
-        Utils.drawLines(75, y, 325, y);
-        Utils.drawLines(x, 75, x, 325);
+        Utils.drawLine(75, y, 325, y);
+        Utils.drawLine(x, 75, x, 325);
         i ++;
     }
 }
