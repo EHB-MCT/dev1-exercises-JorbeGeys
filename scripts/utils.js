@@ -16,3 +16,10 @@ export function drawLine (x1 , y1 , x2 , y2){
     context.lineTo(x2 , y2);
     context.stroke();
 }
+
+
+export function strokeCircle (x1 , y1 , r){
+    context.beginPath();
+    context.ellipse(x1 , y1 , r , r , Math.PI * 2 , 0 , Math.PI * 2);
+    context.stroke();
+}
