@@ -23,3 +23,9 @@ export function strokeCircle (x1 , y1 , r){
     context.ellipse(x1 , y1 , r , r , Math.PI * 2 , 0 , Math.PI * 2);
     context.stroke();
 }
+
+
+export function rgb(r , g , b){
+    let rgb = "rgb(" + r + "," + g + "," + b + ")";
+    return rgb;
+}
