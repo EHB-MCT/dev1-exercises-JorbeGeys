@@ -12,12 +12,13 @@ function draw() {
 }
 
 function drawGradientCircles() {
-    let i = 0;
-    while () {
-        let gray = ;
+    let i = 6;
+    while (i >= 0) {
+        let gray = (6 - i)*(255/6);
         context.fillStyle = Utils.rgb(gray, gray, gray);
-        let radius = ;
-        Utils.fillAndStrokeCircle(200, 200, radius);
-        i++;;
+        let radius = 25;
+        Utils.fillAndStrokeCircle(200, 200, i*radius);
+        i--;
+        console.log(i);
     }
 }
