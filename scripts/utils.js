@@ -29,3 +29,9 @@ export function rgb(r , g , b){
     let rgb = "rgb(" + r + "," + g + "," + b + ")";
     return rgb;
 }
+export function fillAndStrokeCircle (x , y , r){
+    strokeCircle(x , y , r);
+    context.fillstyle = "grey";
+    context.fill();
+    console.log("grey");
+}
