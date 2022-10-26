@@ -75,10 +75,33 @@ for (let j = 0 ; j < 10 ; j++){
 */
 
 
-context.fillStyle = "#7dc4e8";
-context.strokeStyle = "#7dc4e8";
+/* DEEL OEFEING 6*/
 for (let j = 0 ; j < 10 ; j++){
-    for (let i = 0 ; i < 10 ; i++){
-        Utils.fillAndStrokeCircle(i * height/9 , j * height/9 , height/18);
+    if( j % 2 == 0){
+        for (let i = 0 ; i < 10 ; i++){
+            if (i % 2 == 0){
+                context.fillStyle = "#e87d7d";//rood
+                context.strokeStyle = "#e87d7d";
+            }
+            else{
+                context.fillStyle = "#7dc4e8";//blauw
+                context.strokeStyle = "#7dc4e8";
+            }
+            Utils.fillAndStrokeCircle(i * height/9 , j * height/9 , height/18);
+        }
+    }
+
+    else{
+        for (let i = 0 ; i < 10 ; i++){
+            if (i % 2 == 1){
+                context.fillStyle = "#e87d7d";//rood
+                context.strokeStyle = "#e87d7d";
+            }
+            else{
+                context.fillStyle = "#7dc4e8";//blauw
+                context.strokeStyle = "#7dc4e8";
+            }
+            Utils.fillAndStrokeCircle(i * height/9 , j * height/9 , height/18);
+        }
     }
 }
