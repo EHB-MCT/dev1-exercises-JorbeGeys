@@ -7,6 +7,8 @@ let height = context.canvas.height;
 console.log("widht" , width);
 console.log("height" , height);
 
+context.fillRect(0 , 0, width , height);
+
 for (let i = 0 ; i < 50 ; i++){
     drawBubbles();
 }
@@ -20,10 +22,11 @@ function drawBubbles(){
     let posY = 200 + Math.random()*(height-400);
     let radius = 10 + Math.random() * 50;
 
-    console.log("posX" , posX);
+    /*console.log("posX" , posX);
     console.log("posY" , posY);
-    console.log("radius" , radius);
+    console.log("radius" , radius);*/
 
     context.fillStyle = "rgba(" + red + "," + green + "," + blue + "," + 0.5 + ")";
-    Utils.fillAndStrokeEllipse(posX , posY , radius , radius);
+    context.strokeStyle = "rgba(" + red + "," + green + "," + blue + "," + 0.5 + ")";
+    Utils.fillAndStrokeCircle(posX , posY , radius);
 }

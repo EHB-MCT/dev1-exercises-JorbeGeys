@@ -33,7 +33,6 @@ export function rgb(r , g , b){
 
 export function fillAndStrokeCircle (x , y , r){
     strokeCircle(x , y , r);
-    //context.fillstyle = "grey";
     context.fill();
 }
 
