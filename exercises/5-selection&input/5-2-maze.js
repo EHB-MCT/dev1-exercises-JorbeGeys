@@ -8,14 +8,27 @@ let height = context.canvas.height;
 context.lineWidth = 5;
 
 
-let y = 50;
-
-
 
 line();
 
 
+function line(){
+    for (let y = 0 ; y <height ; y = y+10){
+        for (let x = 0 ; x < width ; x= x+10){
+            
+            let r = Math.round( Math.random() );
 
+            if (r == 0){
+                Utils.drawLine(x , y ,x+ 10 , y + 10);
+            }
+
+            else{
+            Utils.drawLine(x , y + 10 , x+10 , y);
+            }
+        }
+    }
+}
+/*
 function line(){
     for ( let y = 0 ; y < height ; y = y + 10){
         for (let x = 0 ; x < width ; x = x + 10){
@@ -31,4 +44,5 @@ function line(){
             }
         }
     }
-}
+}*/
+
