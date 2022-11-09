@@ -42,3 +42,7 @@ export function fillAndStrokeEllipse (x , y , rx , ry){
     context.stroke();
     context.fill();
 }
+
+export function calculateDistance(x1,y1,x2,y2){
+    return Math.hypot(x2-x1 , y2-y1);
+}

@@ -25,7 +25,7 @@ function drawSquare(){
 
 
     let amount = (height - 200) / 2 ;
-    let space = (width - 200) / 2;
+    let space = (width - 200) / 2 ;
 
     for (let j = 1 ; j <= amount ; j++){
         context.strokeStyle = "black";
