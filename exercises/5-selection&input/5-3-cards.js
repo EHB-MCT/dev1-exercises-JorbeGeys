@@ -5,8 +5,13 @@ import * as Utils from "../../scripts/utils-prof.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
-context.fillStyle = "green"
-//context.fillRect(0,0,width,height);
+
+document.getElementById("roll").onclick = roll;
+
+function draw() {
+   let rand = Utils.randomNumber(1, 6);
+   console.log("You rolled a " + rand);
+}
 
 
 
@@ -16,6 +21,7 @@ context.fillStyle = "green"
 
 
 function drawHeart(x, y) {
+    context.fillStyle = "red";
     context.beginPath();
     context.moveTo(x, y - 10);
     context.bezierCurveTo(x, y - 25, x + 40, y - 15, x, y + 20);
@@ -25,6 +31,7 @@ function drawHeart(x, y) {
 }
 
 function drawClover(x, y) {
+    context.fillStyle = "black";
     Utils.fillCircle(x - 10, y + 5, 10);
     Utils.fillCircle(x + 10, y + 5, 10);
     Utils.fillCircle(x, y - 10, 10);
@@ -37,6 +44,7 @@ function drawClover(x, y) {
 }
 
 function drawPike(x, y) {
+    context.fillStyle = "black";
     context.beginPath();
     context.moveTo(x, y - 20);
     context.bezierCurveTo(x, y - 30, x + 40, y + 20, x, y + 10);
@@ -51,6 +59,7 @@ function drawPike(x, y) {
 }
 
 function drawDiamond(x, y) {
+    context.fillStyle = "red";
     context.beginPath();
     context.moveTo(x - 20, y);
     context.lineTo(x, y - 20);
