@@ -16,9 +16,6 @@ function move(eventData){
 
     let x = eventData.pageX;
     let y = eventData.pageY;
-
-    console.log("x = ", x);
-    console.log("y = ", y);
     
     context.fillRect(x , 0 , dikte , height);
     context.fillRect(0 , y , width , dikte);
